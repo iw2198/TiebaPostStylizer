@@ -1,0 +1,37 @@
+{
+  "name": "贴子样式简易调整",
+  "description": "v0.1 by iw 2024.11.26",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+   
+  },
+  "icons":{
+    "16": "images/logo_16.png",
+    "32": "images/logo_32.png",
+    "48": "images/logo_48.png",
+    "128": "images/logo_128.png"
+
+  },
+  "content_scripts": [
+    
+    {
+      "js": [
+        "scripts/update_div.js"
+      ],
+      
+      "matches": [
+        "https://tieba.baidu.com/p/*"
+      ]
+    }
+
+
+  ],
+  "permissions":[
+    "tabs",
+    "activeTab",
+    "storage"
+  ]
+  
+}
